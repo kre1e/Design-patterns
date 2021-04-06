@@ -6,9 +6,9 @@ using System.Text;
 
 namespace Design_patterns
 {
-    internal class Collider
+    internal class Collider : Component
     {
-        public bool CheckCollisionEvents { get; set; };
+        public bool CheckCollisionEvents { get; set; }
         private Vector2 size;
         private Vector2 origin;
         private Texture2D texture;
