@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Design_patterns
 {
-    internal class SpriteRenderer
+    internal class SpriteRenderer : Component
     {
         public Texture2D Sprite { get; set; }
 
