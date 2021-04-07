@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Design_patterns
 {
-    internal class Enemy : Component
+    public class Enemy : Component
     {
         private Vector2 VenstreØversteHjørne = new Vector2(0, 0);
         private Vector2 HøjreØversteHjørne = new Vector2(1980, 0);

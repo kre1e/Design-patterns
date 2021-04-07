@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Design_patterns
 {
-    internal class EnemyFactory
+    public class EnemyFactory
     {
         private static EnemyFactory instance;
 

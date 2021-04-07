@@ -7,9 +7,9 @@ namespace Design_patterns
 {
     public class GameWorld : Game
     {
-        private GraphicsDeviceManager graphics;
+        public GraphicsDeviceManager graphics;
 
-        private SpriteBatch spriteBatch;
+        public SpriteBatch spriteBatch;
         private List<GameObject> gameobject = new List<GameObject>();
 
         public GameWorld()
@@ -39,6 +39,8 @@ namespace Design_patterns
             // TODO: Add your initialization logic here
 
             GameObject go = new GameObject();
+
+            GameWorld GW = Instance;
 
             gameobject.Add(EnemyFactory.Instance.Create("Blue"));
 

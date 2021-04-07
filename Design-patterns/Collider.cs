@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Design_patterns
 {
-    internal class Collider : Component
+    public class Collider : Component
     {
         public bool CheckCollisionEvents { get; set; }
         private Vector2 size;
@@ -32,7 +32,7 @@ namespace Design_patterns
         {
             this.origin = spriteRenderer.Origin;
             this.size = new Vector2(spriteRenderer.Sprite.Width, spriteRenderer.Sprite.Height);
-            texture = GameWorld.Instance.Content.Load<Texture2D>("CollisionBox");
+            //texture = GameWorld.Instance.Content.Load<Texture2D>("");
         }
 
         public void OnCollisionEnter(Collider other)
