@@ -4,7 +4,11 @@ using System.Text;
 
 namespace Design_patterns
 {
-    class Factory
+    public abstract class Factory
     {
+        public abstract GameObject Create(string type);
+
     }
+
 }
+
